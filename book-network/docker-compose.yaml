@@ -1,0 +1,10 @@
+services:
+  mail:
+    image: maildev/maildev
+    container_name: mail
+    ports:
+      - 1080:1080
+      - 1025:1025
+networks:
+  spring-demo:
+   driver: bridge
